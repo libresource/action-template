@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Test Action With Param
-      uses: libresource/action-template@master
+      uses: libresource/action-template@v0.2.0
       with:
         param-example: 'Hello GitHub!'
