@@ -1,4 +1,4 @@
-name: "Action Template"
+name: "Empty Action Template"
 author: 'libresource'
 description: "Action template for GitHub actions"
 inputs:
