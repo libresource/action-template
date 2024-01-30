@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Test Action Without Param
-      uses: libresource/action-template@v0.2.0
+      uses: libresource/action-template@v0.2.1

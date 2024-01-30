@@ -71,8 +71,40 @@ Just use this repository as GitHub repository template
 
 ## Quickstart
 
-- Check [REAMDE.md](profile/README.md) in the profile folder. It's your organization readme
-- Delete or change [this](README.md) README.md
+```yaml
+name: Test Action Without Param
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Test Action Without Param
+      uses: libresource/action-template@v0.2.1
+```
+
+```yaml
+name: Test Action With Param
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Test Action With Param
+      uses: libresource/action-template@v0.2.1
+      with:
+        param-example: 'Hello GitHub!'
+```
+
+- Change [action.yml](action.yml), [Dockerfile](Dockerfile) and [entrypoint.sh](entrypoint.sh)
+- Change [this](README.md) README.md
 - Check all useful files in the project
 - Use [CHECKLIST.md](CHECKLIST.md) to check all of you need for good open source project
 - Enjoy
@@ -80,8 +112,8 @@ Just use this repository as GitHub repository template
 ## Examples
 
 GitHub's repositories which use this template
-- [Libresource](https://github.com/libresource/.github)
-- [FindSimilar](https://github.com/findsimilar/.github)
+- [action-template](https://github.com/libresource/action-template) (This repository)
+- [fun-adventure-in-turkey](https://github.com/PaxlavaGames/fun-adventure-in-turkey) (Visual Novel on RenPy)
 
 ## Contributing
 
