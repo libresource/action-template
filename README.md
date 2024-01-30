@@ -71,6 +71,10 @@ Just use this repository as GitHub repository template
 
 ## Quickstart
 
+### Run using stable version
+
+#### Without params
+
 ```yaml
 name: Test Action Without Param
 
@@ -83,8 +87,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Test Action Without Param
-      uses: libresource/action-template@v0.2.1
+      uses: libresource/action-template@v2.0.0
 ```
+
+#### With params
 
 ```yaml
 name: Test Action With Param
@@ -98,7 +104,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Test Action With Param
-      uses: libresource/action-template@v0.2.1
+      uses: libresource/action-template@v2.0.0
       with:
         param-example: 'Hello GitHub!'
 ```
@@ -108,6 +114,12 @@ jobs:
 - Check all useful files in the project
 - Use [CHECKLIST.md](CHECKLIST.md) to check all of you need for good open source project
 - Enjoy
+
+### Run using last version (maybe unstable)
+
+```yaml
+uses: libresource/action-template@main
+```
 
 ## Examples
 
