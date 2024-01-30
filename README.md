@@ -87,7 +87,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Test Action Without Param
-      uses: libresource/action-template@v2.0.0
+      uses: libresource/action-template@v1.0.0
 ```
 
 #### With params
@@ -104,7 +104,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Test Action With Param
-      uses: libresource/action-template@v2.0.0
+      uses: libresource/action-template@v1.0.0
       with:
         param-example: 'Hello GitHub!'
 ```
